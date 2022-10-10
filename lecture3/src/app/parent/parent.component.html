@@ -1,0 +1,15 @@
+
+
+
+<!-- <app-child [bookTitle]="booktitle"></app-child>
+
+
+<app-child (newClick)="click2($event)"></app-child> -->
+
+
+<ng-container *ngFor="let item of bookList">
+    <app-child [book]="item"></app-child>
+</ng-container>
+
+
+<button (click)="onAddBook(testBook)">Add book</button>
